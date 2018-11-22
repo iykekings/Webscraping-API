@@ -1,10 +1,16 @@
-# An API Endpoint for webscrapped data
+# An API Endpoint for webscrapped news data
+
+# With cron-job to run, refresh and store the news data in mongodb database
 
 ## To use, Run
 
 ### `git clone`
 
 ### `npm install`
+
+### Install mongodb on your machine
+
+### `mongod`
 
 ### `npm run dev`
 
