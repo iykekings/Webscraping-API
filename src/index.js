@@ -32,7 +32,7 @@ const PORT = process.env.PORT || 3000;
 
 connect();
 
-cron.schedule('*/5 * * * *', async function() {
+cron.schedule('0 0 * * *', async function() {
   try {
     let found = false;
     await Oilandgas.find({}, (err, res) => {
