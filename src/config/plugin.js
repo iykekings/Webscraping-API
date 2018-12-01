@@ -5,9 +5,7 @@ module.exports = function timestamp(schema) {
   });
 
   schema.pre('save', function() {
-    if (!this.createdAt) {
-      this.createdAt = new Date();
-    }
+    this.createdAt = new Date();
   });
   schema.pre('update', async function() {
     await this.update({}, { $set: { updatedAt: new Date() } });

@@ -8,8 +8,7 @@ const oilandgasSchema = new Schema({
     required: [true, 'News must have a heading']
   },
   createdAt: {
-    type: Date,
-    default: Date.now()
+    type: Date
   },
   content: {
     imgSrc: {
