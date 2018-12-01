@@ -1,10 +1,15 @@
 import mongoose from 'mongoose';
+import timestamp from '../../../config/plugin';
 
 const { Schema } = mongoose;
 const oilandgasSchema = new Schema({
   heading: {
     type: String,
     required: [true, 'News must have a heading']
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now()
   },
   content: {
     imgSrc: {
@@ -20,5 +25,7 @@ const oilandgasSchema = new Schema({
     required: [true, 'News must have a body']
   }
 });
+
+oilandgasSchema.plugin(timestamp);
 
 export default mongoose.model('Oilandgas', oilandgasSchema);

@@ -5,8 +5,8 @@ export default {
     try {
       const news = await Oilandgas.find()
         .limit(15)
-        .select({ heading: 1, intro: 1 });
-
+        .select('heading intro content.imgSrc')
+        .sort('createdAt');
       return res.json(news);
     } catch (error) {
       console.error(error);
