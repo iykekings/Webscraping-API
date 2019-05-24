@@ -33,7 +33,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "express": "^4.17.0",
     "mongoose": "^5.3.12",
     "morgan": "^1.9.1",
     "node-cron": "^2.0.3",
