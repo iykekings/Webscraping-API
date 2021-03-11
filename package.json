@@ -36,7 +36,7 @@
     "express": "^4.16.4",
     "mongoose": "^5.3.12",
     "morgan": "^1.9.1",
-    "node-cron": "^2.0.3",
+    "node-cron": "^3.0.0",
     "x-ray": "^2.3.3"
   }
 }
